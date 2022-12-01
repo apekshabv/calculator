@@ -13,8 +13,8 @@ body {
 }
 
 .container {
-    height: 550px;
-    width: 300px;
+    height: 1150px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -30,7 +30,7 @@ body {
     overflow: hidden;
     align-items: end;
     padding: 15px;
-    font-size: 30px;
+    font-size: 60px;
     border-radius: 15px;
     border: 1px solid black;
     flex: 1;
@@ -43,7 +43,7 @@ body {
 }
 
 .currentOperationScreen {   
-    font-Size: 42px;
+    font-Size: 72px;
     color: #7CE38B;
 }
 
@@ -52,20 +52,20 @@ body {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     flex: 3;
-    gap: 9px;
+    gap: 18px;
 }
 
 .row {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 9px;
+    gap: 18px;
 }
 
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 30px;
     background-color: #121212;
     color: #ccc;
     transition: all 0.2s ease-in-out;
@@ -73,7 +73,7 @@ body {
 }
 
 .operator {
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .number:hover {
