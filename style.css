@@ -1,0 +1,114 @@
+*{
+    font-family: cursive,sans-serif;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.container {
+    height: 550px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+/*  || Display css ||  */
+.display {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: end;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    flex: 1;
+    background-color: #191919;
+    color: #ffffff;
+}
+
+.previousOperationScreen {
+    color: #B0B3B8;
+}
+
+.currentOperationScreen {   
+    font-Size: 42px;
+    color: #7CE38B;
+}
+
+/*  || Keypad-button css ||  */
+.keypad {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    flex: 3;
+    gap: 9px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 9px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #121212;
+    color: #ccc;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+}
+
+.operator {
+    font-size: 20px;
+}
+
+.number:hover {
+    color: #111;
+    background-color: #fff;
+    background-size: 100% 100%;
+}
+
+.operator:hover {
+    color: #111;
+    background-color: #03DAC6;
+}
+
+.clear:hover {
+    color: #111;
+    background-color: #CC3333;
+}
+
+.equal:hover {
+    color: #111;
+    background-color: #BB86FC;
+}
+
+/* ||  buttons grid alignment  || */
+.first , .last{
+    grid-template-areas:
+    "a a b c" ;
+}
+
+.first > .clear , .last > .number{
+    grid-area: a;
+}
+
+.first > .delete , .last > .decimal{
+    grid-area: b;
+}
+
+.first > .operator , .last > .equal {
+    grid-area: c;
+}
