@@ -3,6 +3,10 @@
     font-weight: 400;
 }
 
+h1{
+    text-align: top;    
+}
+
 body {
     display: flex;
     justify-content: center;
