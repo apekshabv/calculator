@@ -14,7 +14,7 @@ body {
 
 .container {
     height: 1150px;
-    width: 700px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -29,8 +29,8 @@ body {
     justify-content: space-between;
     overflow: hidden;
     align-items: end;
-    height: 120px;
-    width: 70px
+    height: 70px;
+    width: 50px;
     padding: 15px;
     font-size: 60px;
     border-radius: 15px;
