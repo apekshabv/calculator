@@ -1,24 +1,23 @@
 *{
     font-family: cursive,sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
     background-image: url("https://cdn2.vectorstock.com/i/1000x1000/43/21/math-chemistry-and-physical-formules-on-board-vector-27924321.jpg");
-}
+    background-color: #000000;
 }
 
 .container {
-    height: 1150px;
-    width: 1150px;
+    height: 550px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 10px;
+    gap: 10px;
     border-radius: 15px;
 }
 
@@ -29,12 +28,10 @@ body {
     justify-content: space-between;
     overflow: hidden;
     align-items: end;
-    height: 70px;
-    width: 50px;
     padding: 15px;
-    font-size: 60px;
+    font-size: 30px;
     border-radius: 15px;
-    border: 2px solid black;
+    border: 1px solid black;
     flex: 1;
     background-color: #191919;
     color: #ffffff;
@@ -45,7 +42,7 @@ body {
 }
 
 .currentOperationScreen {   
-    font-Size: 72px;
+    font-Size: 42px;
     color: #7CE38B;
 }
 
@@ -54,20 +51,20 @@ body {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     flex: 3;
-    gap: 18px;
+    gap: 9px;
 }
 
 .row {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 18px;
+    gap: 9px;
 }
 
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: #121212;
     color: #ccc;
     transition: all 0.2s ease-in-out;
@@ -75,7 +72,7 @@ body {
 }
 
 .operator {
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .number:hover {
@@ -116,3 +113,5 @@ body {
 .first > .operator , .last > .equal {
     grid-area: c;
 }
+   
+
